@@ -1,7 +1,7 @@
 +++
 title = "CV/Resume"
 +++
-.
+
 
 # Work experience
 
@@ -10,7 +10,11 @@ title = "CV/Resume"
 **Achievements** : 
 Working on the delivery system, creating and maintaining
 services used by the warehouse to send the products to the
-customer.
+customer. Working to extracting out services from the monolith
+PHP into microservices. I also work to create a web application
+that allows us to follow at which stage the product in the
+warehouse. We discuss how our team which is mostly made of
+backend engineers can create a web application.
 
 **Technical Environment/Methodologies** :
 Docker, Kubernetes, Spring, Database, Rest web services,
@@ -21,12 +25,12 @@ microservice, Html/CSS, Javascript
 #### **Capgemini** | *2019 Backend Software engineer* - 1 year - Toulouse
 
 **Achievements** : 
-I drove the improvement of the application used for updating
-professional customer prices. Improved the monitoring system
-by using Grafana, so they can have real-time monitoring. I also
-worked to improve the speed of the whole system by 60%,
-improved the reliability of the system by making a more robust
-error handling.
+I drove the improvement of the application used for
+updating professional customer prices. Improved the
+monitoring system by using Grafana, so they can have
+real-time monitoring. I also worked to improve the speed
+of the whole system by 60%, improved the reliability of
+the system by making a more robust error handling.
 
 **Technical Environment/Methodologies** :
 AWS, Spring, Database, Web services Rest, Reliable and Scalable system. 
