@@ -26,7 +26,8 @@ So here another view of all the components we can found into a PaaS that allow y
 
 In the next articles of this series, we are gonna try to see how each component work. Follow me on [Twitter](https://twitter.com/MarS_XIV) for the next article.
 
-Here some ressources I found while searching 
+Here some ressources I found while searching
+ 
 - https://youtu.be/3IXZ6Taa9Io
 - https://youtu.be/UvIGFh3ZEgU
 - https://youtu.be/nassYitfhfc
