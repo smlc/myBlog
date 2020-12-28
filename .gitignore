@@ -6,7 +6,7 @@
 /public/
 /resources/_gen/
 hugo_stats.json
-themes/hello-friend/static/assets/
+/themes/hello-friend/static/assets/
 
 # Executable may be added to repository
 hugo.exe
