@@ -12,7 +12,7 @@ Working on the delivery system, creating and maintaining
 services used by the warehouse to send the products to the
 customer. Working to extracting out services from the monolith
 PHP into microservices. I also work to create a web application
-that allows us to follow at which stage the product in the
+that allows us to follow at which stage the product is in the
 warehouse. We discuss how our team which is mostly made of
 backend engineers can create a web application.
 
@@ -27,7 +27,7 @@ microservice, Html/CSS, Javascript
 **Achievements** : 
 I drove the improvement of the application used for
 updating professional customer prices. Improved the
-monitoring system by using Grafana, so they can have
+monitoring system by using Grafana, so the business can have
 real-time monitoring. I also worked to improve the speed
 of the whole system by 60%, improved the reliability of
 the system by making a more robust error handling.
@@ -42,9 +42,9 @@ AWS, Spring, Database, Web services Rest, Reliable and Scalable system.
 **Achievements** : 
 Improved the Maven project by analyzing the pom for
 unused dependencies, fixed dependency related bugs,
-reworked the structure of the project, and improved the
+reworked the structure of the project and improved the
 build time by 20%. I drove the test strategy by helping the
-team set good practices for unit tests and choosing a test
+team to set good practices for unit tests and choosing a test
 framework. The test coverage of the application went
 from 40% to 80%.
 
@@ -57,7 +57,7 @@ Scrum
 #### **Capgemini** | *2017 Java Developer* - 1 year - Toulouse
 
 **Achievements** : 
-Developeda web application for management team of an
+Developeda web application for the management team of an
 Airbus project.
 
 **Technical Environment/Methodologies** :
