@@ -4,17 +4,18 @@ date: "2020-11-04"
 author: "Viktor"
 ---
 
-### Lambda 
+## Lambda 
 
-The principal aim of lambda in java is to make more readable and concise code. For that java lambda has the following property : 
-- They are anonymous function because you don't need to name them
-- In opposition to method they are not attached to a particular class.
-- You can pass them around as argument to other methods and stored them.
+The lambda's principal aim in java is to make more readable and concise code. For that, Java lambda has the following property: 
 
-#### Normal order
+- They are anonymous function because you don't need to name them 
+- In opposition to a method, they are not attached to a particular class. 
+- You can pass them around as an argument to other methods and stored them.
 
-**Normal order** is about executing a function only if it's needed. In opposition to **applicative order** where what we see when we read the code is executed.
-When some function is not executed due to normal order that can improve performance. One of the commons ways to do that in old java version is Short-circuit evaluation.
+### Normal order
+
+**Normal order** is about executing a function only if needed in opposition to **applicative order** where what we see when we read the code is executed.
+When some function is not executed due to normal order, performance can improve. One of the commons ways to do that in the old java version is Short-circuit evaluation.
 
 ```java
 public void shortCircuit(){
@@ -28,8 +29,8 @@ public void shortCircuit(){
 
 Here due to short-circuit ```veryExpensiveFunction()``` is not called, because the first condition ```trigger > 10``` is false.
 
-#### Eager vs Lazy evaluations
-Eager evaluation is when the code follow the execution flow. We see a function call and then it's been evaluated at the same time. 
+### Eager vs Lazy evaluations
+Eager evaluation is when the code follows the execution flow. We see a function call, and then it's been evaluated simultaneously. 
 
 ```java
 public void shortCircuit(){
@@ -42,7 +43,7 @@ public void shortCircuit(){
 }
 ```
 
-If we write the previous function this way, we can see that we lose the advantage of short-circuit and due to the eager evaluation the ```veryExpensiveFunction()``` is executed without we need its result.
+Let's write the previous function this way. We can see that we lose the advantage of short-circuit. Due to the eager evaluation, the ```veryExpensiveFunction()``` is executed without we need its result.
 
 ```java
 public void shortCircuit(){
@@ -54,4 +55,5 @@ public void shortCircuit(){
     }
 }
 ```
-Here a way to write this in java 8+, the veryExpensiveFunction is not executed before we really need it's result.
+This is the way to write a short-circuit in java 8+ using lambda. The ```veryExpensiveFunction()``` is not executed before we need his result.
+
