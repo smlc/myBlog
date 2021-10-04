@@ -1,7 +1,7 @@
 ---
 title: "Terraform initialization script with user_data"
 date: "2020-12-23"
-author: "Tristina"
+author: "Marlon"
 description: "If you want to install git or python once Terraform create your EC2 instance." 
 ---
 
