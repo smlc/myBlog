@@ -1,7 +1,7 @@
 ---
 title: "How to PaaS - Part 0"
 date: "2020-08-14"
-author: "Heimerdinger"
+author: "Marlon"
 ---
 
 Are you ever ask yourself how Platforma as a Service (PaaS) work? Then you are in the right place welcome to How to PasS part 0 (yes part 0, table index start at 0 no ?). 
