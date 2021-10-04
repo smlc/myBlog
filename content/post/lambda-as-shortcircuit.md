@@ -1,7 +1,7 @@
 ---
 title: "Lambda as short circuit"
 date: "2020-11-04"
-author: "Viktor"
+author: "Marlon"
 ---
 
 ## Lambda 
