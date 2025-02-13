@@ -16,7 +16,7 @@ They are also more lightweight than Kernel threads because they have a smaller m
 
 In Java, the historical way for threads to share data was to use lock primitives to synchronize access to data between different threads.
 
-{{< image src="/img/JavaVirtualThreadSharedMemWhite.png" alt="Java threads shared data through shared memory" position="center" style="border-radius: 8px;" >}}
+{{< image src="/img/JavaVirtualThreadSharedMem.png" alt="Java threads shared data through shared memory" position="center" style="border-radius: 8px;" >}}
 
 
 For example one thread may write some data into our shared memory space and then want another thread to consume or modify that data. However, this situation can lead to various errors and scenarios that we, as developers, need to manage, such as:
