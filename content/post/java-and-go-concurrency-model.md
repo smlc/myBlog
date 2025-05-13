@@ -6,9 +6,9 @@ author: "Marlon"
 
 ## Computation: Virtual thread and Goroutines
 
-Both Java virtual threads and Go goroutines are what we call user-space threads. So what is a user-space thread, opposite to Kernel threads (e.g. Thread class in Java) user-space threads, are often managed by the language runtime. This means the language will manage and schedule workload, and context switch between OS threads for you.
+Both Java virtual threads and Go goroutines are what we call user-space threads. So what is a user-space thread, opposite to Kernel threads (e.g. Thread class in Java) User-space threads are often managed by the language runtime. This means the language will manage and schedule workload, and context switch between OS threads for you.
 
-They are also more lightweight than Kernel threads because they have a smaller memory footprint, don’t need to involve OS calls, and have faster context-switch than Kernel threads.
+They are also more lightweight than Kernel threads because they have a smaller memory footprint, don’t need to involve OS calls, and have faster context-switching than Kernel threads.
 
 ## Communication Models: Channel vs Share Memory Communication
 
@@ -19,7 +19,7 @@ In Java, the historical way for threads to share data was to use lock primitives
 {{< image src="/img/JavaVirtualThreadSharedMem.png" alt="Java threads shared data through shared memory" position="center" style="border-radius: 8px;" >}}
 
 
-For example one thread may write some data into our shared memory space and then want another thread to consume or modify that data. However, this situation can lead to various errors and scenarios that we, as developers, need to manage, such as:
+For example, one thread may write some data into our shared memory space and then want another thread to consume or modify that data. However, this situation can lead to various errors and scenarios that we, as developers, need to manage, such as:
 
 - Spurious Wakeup
 - Race Conditions
@@ -31,13 +31,13 @@ And many others…
 
 ### Channel communication
 
-In Java we saw that threads shared access to the same data, and needed synchronization. 
-But in fact, under the hood, Go channel also has a shared data structure, but why the Go developer doesn't have to deal with synchronization? Once you put data into the channel Go will make a copy, which means the goroutines don't have to access the same data into memory. 
+In Java, we saw that threads shared access to the same data and needed synchronization. 
+But in fact, under the hood, the Go channel also has a shared data structure, but why the Go developer doesn't have to deal with synchronization? Once you put data into the channel, Go will make a copy, which means the goroutines don't have to access the same data in memory. 
 
 What made concurrency issues difficult is that you have to deal with two or three of those parameters:
 
-- Shared: data use than more than one thread
-- Mutuable: data being updated
+- Shared: data used by more than one thread
+- Mutable: data being updated
 - State: data storage
 
 What Go channels is doing is deleting the shared aspect of the concurrency problem. 
@@ -47,8 +47,8 @@ What Go channels is doing is deleting the shared aspect of the concurrency probl
 
 ## Conclusion
 
-The goal of this blog post it’s not to say what is best, but when learning another language I like to try to see which approach 
-the language designer took to solve common problems we found in any language here concurrency. 
+The goal of this blog post it’s not to say what is best, but when learning another language, I like to try to see which approach 
+the language designer took to solve common problems we found in any language, here concurrency. 
 It helps me understand how I can implement solutions in that new language and use my existing knowledge as an anchor so 
 I can focus on the new syntax rather than the concept. 
 
